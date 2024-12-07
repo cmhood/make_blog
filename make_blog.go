@@ -18,10 +18,10 @@ package main
 import (
 	"fmt"
 	"os"
-	"text/template"
 	"path/filepath"
-	"strings"
 	"sort"
+	"strings"
+	"text/template"
 	"time"
 )
 
