@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Blog title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="rss.xml" />
+</head>
+<body>
+
+<header>
+<h1>Blog title</h1>
+</header>
+
+{{range .}}<p>{{.Date.Long}}<br /><a href="{{.Path}}">{{.Title}}</a></p>
+{{end}}
+k/body>
+</html>

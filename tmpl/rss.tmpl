@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<language>en</language>
+<title>Blog title</title>
+<description>Blog description</description>
+<link>https://example.com/</link>
+<atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml" />
+{{range . -}}
+<item>
+<title>{{.Title}}</title>
+<pubDate>{{.Date.Rfc2822}}</pubDate>
+<link>https://example.com/{{.Path}}</link>
+<guid>https://example.com/{{.Path}}</guid>
+</item>
+{{end -}}
+</channel>
+</rss>
